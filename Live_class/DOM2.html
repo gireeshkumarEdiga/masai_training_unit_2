@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #boxes {
+            border: 1px solid green;
+        }
+        #boxes > div {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: red;
+            color : white;
+            font-size: 32px;
+        }
+
+        #boxes2 {
+            border: 1px solid green;
+        }
+        #boxes2 > div {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: green;
+            color : white;
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 id="heading"></h1>
+
+    <div>
+        <label>Input</label>
+        <input id="name" />
+    </div>
+
+    <button id="btn">Chnage</button> -->
+
+
+
+
+    <!-- <h1 id="heading"></h1>
+
+    <div>
+        <label>Input</label>
+        <input id="name" type="text" />
+    </div>
+
+    <button id="btn">Chnage</button>
+
+    <div id="boxes">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div> -->
+
+
+
+
+    <!-- <button id="btn">Create</button>
+
+    <div id="boxes">
+        <div id="b1">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <div id="boxes2"></div> -->
+
+      
+    <h1 id="heading"></h1>
+    <h1 id="heading2"></h1>
+
+    <button id="btn">Create</button>
+
+    <div id="boxes">
+        <div class="b1">1</div>
+        <div class="b1">2</div>
+        <div class="b1">3</div>
+        <div class="b1">4</div>
+        <div class="b1">5</div>
+    </div>
+
+    <div id="boxes2"></div>
+
+</body>
+</html>
+
+<script>
+    // var c = 0;
+
+    // var btn = document.getElementById("btn");
+    // btn.addEventListener("click",changeHeading);
+    // btn.addEventListener("click",changebg);
+
+    // function changeHeading() {
+    //     document.getElementById("heading").textContent = "MASAI " + c;
+    //     c++;
+    //     if(c==5) {
+    //         btn.removeEventListener("click",changeHeading);
+    //     }
+    // }
+
+    // function changebg() {
+    //     document.getElementById("heading").style.backgroundColor="yellow";
+    // }
+
+
+
+
+//     var c = 0;
+    
+//     var btn = document.getElementById("btn");
+//     btn.addEventListener("dblclick",changeHeading);
+
+//     var heading = document.getElementById("heading");
+//     heading.addEventListener("mouseenter",changeRed);
+//     heading.addEventListener("mouseleave",changewhite);
+
+//     var input = document.getElementById("name");
+//     input.addEventListener("focus",showsuggest);
+//     input.addEventListener("blur",showvalidation);
+
+// function changeHeading() {
+//     heading.textContent = "MASAI " + c;
+//     c++;
+// }
+
+// function changeRed() {
+//     heading.style.backgroundColor = "red";
+// }
+
+// function changewhite() {
+//     heading.style.backgroundColor = "white";
+// }
+
+// function showsuggest() {
+//     heading.textContent = "type your name";
+// }
+
+// function showvalidation() {
+//     if(input.value.length > 5) {
+//         heading.textContent = "valid name";
+//         heading.style.backgroundColor = "green";
+//     }else {
+//         heading.textContent = "invalid name";
+//         heading.style.backgroundColor = "red";
+//     }
+// }
+
+
+
+
+//  var boxes = document.querySelectorAll("#boxes > div");
+
+//  for(var i=0; i<boxes.length; i++){
+//      boxes[i].style.backgroundColor = "green";
+//      boxes[i].addEventListener("click",changeColor);
+//  }
+
+ //function changeColor(event) {
+     //document.getElementById("heading").textContent = "clicked"
+     //event.target.style.backgroundColor = "blue";
+
+     //document.getElementById("heading").textContent = event.target.textContent;
+     //event.target.parentNode.style.backgroundColor = "black";
+
+
+     //var div = document.getElementById("boxes").childNodes;
+
+     //var divs = document.querySelectorAll("#boxes > div");
+
+    //  var boxes = document.getElementById("boxes");
+    //  var insideBoxes = boxes.querySelectorAll('div');
+
+    //  console.log(divs);
+    //  for(let i=0; i<divs.length; i++){
+    //      divs[i].style.backgroundColor = "red";
+    //  }
+     //event.target.style.backgroundColor = "blue";
+ //}
+
+
+    //   var btn = document.getElementById("btn");
+    //   btn.addEventListener("click",create);
+
+    //   function create() {
+    //       for(var i=0; i<=10; i++){
+    //         var nDiv = document.createElement("div");
+    //         nDiv.textContent = "Nrupul";
+    //         var boxes = document.getElementById("boxes");
+    //         boxes.appendChild(nDiv);
+    //       }
+    //   }
+
+
+
+
+
+
+
+
+    // var btn = document.getElementById("btn");
+    //   btn.addEventListener("click",create);
+
+
+
+    //   function create() {
+    //       var boxes = document.getElementById("boxes");
+    //       var boxes2 = document.getElementById("boxes2");
+
+    //       //var b1 = document.getElementById("b1");
+    //       var divs = boxes.querySelectorAll("div");
+    //       for(var i=0; i<divs.length; i++){
+    //           boxes2.appendChild(divs[i]);
+    //       } 
+    
+
+
+
+    // function create() {
+    //       var boxes = document.getElementById("boxes");
+    //       var boxes2 = document.getElementById("boxes2");
+
+    //       var divs = boxes.querySelectorAll("div");
+    //       boxes2.append("Hello",divs[3],divs[4])
+    // }
+
+    
+
+
+    //  var c = 6;
+    // function create() {
+    //       var boxes = document.getElementById("boxes");
+    //       var boxes2 = document.getElementById("boxes2");
+    //       var ndivs = document.createElement("div");
+    //       ndivs.textContent = c;
+    //       c++;
+    //       boxes.appendChild(ndivs);
+    // }
+
+
+
+
+    // var c = 6;
+    // function create() {
+    //       var boxes = document.getElementById("boxes");
+    //       var boxes2 = document.getElementById("boxes2");
+    //       var b1 = document.getElementById("b1");
+    //       var ndivs = document.createElement("div");
+    //       ndivs.textContent = c;
+    //       c++;
+    //       boxes.insertBefore(ndivs,b1);
+    // }
+
+     
+
+    // var c = 6;
+
+    // function create() {
+    //       var boxes = document.getElementById("boxes");
+    //       var divs = boxes.querySelectorAll("div");
+    //       for(var i=0; i<divs.length; i++){
+    //           if(i == 3 ) {
+    //               var removed = boxes.removeChild(divs[i]);
+    //               //var removed = divs[i].remove;
+    //           }
+    //       }
+    //       console.log(removed);
+    //       var boxes2 = document.getElementById("boxes2");
+    //       boxes2.appendChild(removed);
+    // }
+
+
+    var boxes = document.getElementById("boxes");
+    var heading = document.getElementById("heading");
+    var heading2 = document.getElementById("heading2");
+    var div1 = boxes.querySelectorAll("div");
+    var div2 = boxes.getElementsByClassName("b1");
+    heading.textContent = div1.length;
+    heading2.textContent = div2.length;
+
+
+    function create() {
+        var ndiv = document.createElement("div");
+        ndiv.textContent = "G";
+        ndiv.setAttribute("class","b1");
+        boxes.appendChild(ndiv);
+        heading.textContent = div1.length;
+        heading2.textContent = div2.length;
+        console.log(div1);
+        console.log(div2);
+    }
+        
+
+</script>

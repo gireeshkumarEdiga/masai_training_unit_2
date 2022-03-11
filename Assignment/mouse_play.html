@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+         #main {
+             margin: 5% 10%;
+             height: 500px;
+             background-color: darkcyan;
+         }
+         #sub {
+             background-color: brown;
+             margin: 35% 0% 0% 80%;
+             width: 100px;
+             height: 50px;
+         }
+     </style>
+</head>
+<body>
+    <div id="main">
+        <button onmouseleave="mouseLeave()" onmouseover="mouseOver()" id="sub" type="submit">SUBMIT</button>
+    </div>
+
+    <script>
+        function mouseOver() {
+            var mouse = document.getElementById("sub");
+            mouse.style.background = "yellow";
+        }
+
+        function mouseLeave() {
+            var mouse = document.getElementById("sub");
+            mouse.style.background = "brown"
+        }
+
+    </script>
+</body>
+</html>

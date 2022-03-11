@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="h1">My color should change when I double click the button!</h1>
+    <button id="btn">Click here to change my color</button>
+
+</body>
+</html>
+
+<script>
+
+    var btn = document.getElementById("btn");
+    var text = document.getElementById("h1");
+
+    btn.addEventListener("dblclick",changeColor);
+
+    function changeColor() {
+        var color1 = "rgb("+random(255)+","+random(255)+","+random(255)+")";
+        text.style.color = color1;
+    }
+
+    function random(num) {
+        return Math.floor(Math.random()*num)
+    }
+
+</script>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <center>
+        <div>
+            <input type="number" placeholder="enter your age" id="userage" />
+            <br />
+            <br />
+            <button onclick="checkage()">Button</button>
+            <br />
+            <h1 id="container"></h1>
+        </div>
+    </center>
+
+
+        <h1>First H1</h1>
+        <h1>Second H1</h1>
+        <h3>First H3</h3>
+        <h3>Second H3</h3>
+        <h5>First H5</h5>
+        <h5>Second H5</h5>
+        <h5>Third H5</h5>
+        <div class="green">First DIV</div>
+        <div class="red">Second DIV</div>
+        <div class="blue">Third DIV</div>
+        <p class="green">First P</p>
+        <p class="red">Second P</p>
+        <p class="blue">Third P</p>
+        <hr/>
+        <button onclick="h1()">Change H1</button>
+        <button onclick="h3()">Change H3</button>
+        <button onclick="h5()">Change H5</button>
+        <button onclick="green()">Change Green</button>
+        <button onclick="red()">Change Red</button>
+        <button onclick="blue()">Change Blue</button>
+
+        <h1 id="display"></h1>
+        <div>
+            <button onclick="press('0')">0</button>
+            <button onclick="press('1')">1</button>
+            <button onclick="press('2')">2</button>
+            <button onclick="press('3')">3</button>
+            <button onclick="press('4')">4</button>
+            <button onclick="press('5')">5</button>
+            <button onclick="press('6')">6</button>
+            <button onclick="press('7')" >7</button>
+            <button onclick="press('8')">8</button>
+            <button onclick="press('9')">9</button>
+        </div>
+        <div>
+            <button onclick="clearD()">Clear</button>
+        </div>
+
+</body>
+</html>
+<script>
+    function checkage() {
+        var age = document.getElementById("userage").value;
+        age = Number(age);
+        var message = document.getElementById("container")
+        if(age>18){
+            message.textContent = "You can drive in India!"
+        }else if(age<18){
+            message.textContent = "You can't drive in India"
+        }else{
+            message.textContent = "You are just old enough to drive in India!"
+        }
+    }
+
+
+
+    function h1(){
+        var head1 = document.querySelectorAll("h1");
+        for(var i=0; i<head1.length; i++){
+            head1[i].style.color = "red";
+        }
+    }
+
+    function h3(){
+        var head3 = document.querySelectorAll("h3");
+        for(var i=0; i<head3.length; i++){
+            head3[i].style.color = "green";
+        }
+    }
+
+    function h5(){
+        var head5 = document.querySelectorAll("h5");
+        for(var i=0; i<head5.length; i++){
+            head5[i].style.color = "blue";
+        }
+    }
+
+    function green(){
+        var g = document.getElementsByClassName("green");
+        for(var i=0; i<g.length; i++){
+            g[i].style.color = "green"
+        }
+    }
+
+    function red(){
+        var r = document.getElementsByClassName("red");
+        for(var i=0; i<r.length; i++){
+            r[i].style.color = "red"
+        }
+    }
+
+    function blue(){
+        var b = document.getElementsByClassName("blue");
+        for(var i=0; i<b.length; i++){
+            b[i].style.color = "blue"
+        }
+    }
+
+    var output = "";
+
+    function press(num){
+        output += num;
+        document.getElementById("display").textContent = output
+    }
+
+    function clearD() {
+        output = "";
+        document.getElementById("display").textContent = output
+    }
+
+
+
+
+</script>

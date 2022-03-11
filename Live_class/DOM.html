@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* .row {
+            padding: 10px;
+            font-size: 16px;
+        }
+        .even_row {
+            color: white;
+            background-color: black;
+        }
+        .odd_row {
+            color: black;
+            background-color: white;
+        } */
+
+        /* .class1 {
+            font-size: 30px;
+        }
+
+        .class2 {
+            color: blue;
+        }
+
+        .class3 {
+            background-color: red;
+        } */
+
+        /* .class1 {
+            color: red;
+            font-size: 32px;
+        }
+
+        #id1 {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+        } */
+
+    </style>
+</head>
+<body>
+
+
+    <!-- <div>First div</div>
+    <div>second div</div>
+    <p>first para</p>
+    <p>second para</p>
+    <button onclick="change()">button</button> -->
+
+    <!-- <div class="class1">First div</div>
+    <div class="class2">second div</div>
+    <p class="class1">first para</p>
+    <p class="class2">second para</p>
+    <button onclick="changeContent()">button</button> -->
+
+    <!-- <button onclick="fun()">Button</button> -->
+    
+    <!-- <h1 id="demo">Javascript</h1>
+
+    <button onclick="change1()">change to masai</button>
+    <button onclick="change2()">change to js</button> -->
+
+    <!-- <input type="text" id="input" placeholder="enter the text" /><br />
+    <button onclick="showInput()">alert input</button> -->
+
+    <!-- <div>
+        <select id="myselect">
+            <option value="medium">M</option>
+            <option value="large">L</option>
+            <option value="extra large">XL</option>
+            <option value="double extra large">XXL</option>
+        </select>
+        <br />
+        <br />
+        <button onclick="show()">Alert Button</button>
+    </div> -->
+
+<!-- 
+    <div id="demo" style="color:red; background-color: yellow;" >Javascript</div>
+    <div>
+        <input type="text" id="input" placeholder="enter here" />
+    </div>
+    <br />
+    <button onclick="alert1()">Alert Input</button>
+    <button onclick="input()">Set Input</button>
+    <button onclick="changeinput()">change input</button>
+    <button onclick="changetojs()">change to js</button> -->
+
+
+    <!-- <div>
+        <a href="https://www.masaischool.com/" target="_blank">Masai school</a>
+    </div>
+    <br />
+    <hr>
+    <div>
+        <img src="data:image/jpeg;base64,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" alt="sai pallavi" />
+    </div>
+    <br />
+    <button onclick="changelink()">Change Link</button>
+    <br />
+    <button onclick="changeimage()">change image</button> -->
+
+
+    <!-- <div id="container"></div>
+    <button onclick="createstudent()">create</button> -->
+
+
+     <!-- <div id="div" class="class1 class2">DIV</div>
+
+     <button onclick="addclass()">Add class</button> -->
+
+    <!-- <div>First div</div>
+    <div>Second div</div>
+    <p>First para</p>
+    <p>Second para</p>
+    <button onclick="setStyle()">Set Style</button>
+    <button onclick="removeStyle()">Remove Style</button> -->
+
+
+
+    <div>First div</div>
+    <div>Second div</div>
+    <p>First para</p>
+    <p>Second para</p>
+    <button onclick="setdiv()">Set Style</button>
+    <button onclick="setpara()">Remove Style</button>
+
+
+
+</body>
+</html>
+
+<script>
+
+    // function change(){
+    //     var divs = document.querySelectorAll("div");
+    //     for(let i=0; i<divs.length; i++){
+    //         let div = divs[i];
+    //         div.style.color = "red";
+    //         div.innerHTML = "div"+(i+1);
+    //     }
+    //     var paras = document.querySelectorAll("p");
+    //     var para = paras[1];
+    //     para.innerHTML = "MASAI";
+    //     para.style.color="yellow";
+    // }
+
+    // function changeContent() {
+    //     var element = document.querySelectorAll(".class1");
+    //     for(let i=0; i<element.length; i++){
+    //         let ele = element[i];
+    //         ele.innerHTML = "class1 - "+i;
+    //     }
+    //     var content = document.querySelectorAll(".class2");
+    //     for(let i=0; i<content.length; i++){
+    //         let con = content[i];
+    //         con.innerHTML = "class2 - "+i;
+    //     }
+    // }
+
+    // function fun(){
+    //     alert("hello girish");
+    // }
+
+    // function change1(){
+    //     document.getElementById("demo").innerHTML = 'MASAI SCHOOL';
+    // }
+
+    // function change2(){
+    //     document.getElementById("demo").innerHTML = 'JAVA SCRIPT';
+    // }
+
+    // function showInput(){
+    //     alert(document.getElementById("input").value);
+    // }
+
+    // function show(){
+    //     alert(document.getElementById("myselect").value)
+    // }
+
+    // function alert1(){
+    //     alert(document.getElementById("input").value);
+    // }
+
+    // function input() {
+    //     document.getElementById("input").value = "";
+    // }
+
+    // function changeinput() {
+    //     document.getElementById("demo").innerHTML = document.getElementById("input").value;
+    // }
+
+    // function changetojs(){
+    //     document.getElementById("demo").innerHTML = "javascript";
+    // }
+
+    // function changelink(){
+    //     var element = document.querySelector("a");
+    //     element.setAttribute("href","https://gireeshkumarediga.github.io/Gireeshkumar_Portfolio/");
+    //     element.innerHTML = "GIREESHKUMAR";
+    // }
+
+    // function changeimage(){
+    //     var count = document.querySelector("img");
+    //     count.setAttribute("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhA6P6mOGurH56CigWfPeiDCSqXgRHXwWLtg&usqp=CAU")
+    // }
+
+    // var students = ['Ajay','Akshay','Anusha','Chandrashekhara','Haren','Hasaan','Mahesh','Mousumi','Pavan','Rahul','Sumanta','Venkatesh','Vetrival','Vijayendra'];
+
+    // function createstudent(){
+
+    //     var cont = document.getElementById("container");
+
+    //     for(var i=0; i<students.length; i++){
+    //         let element = document.createElement("div");
+    //         element.innerHTML = students[i];
+
+    //         if(i%2==0){
+    //             element.setAttribute("class","row even_row")
+    //         }else{
+    //             element.setAttribute("class","row odd_row");
+    //         }
+
+    //         cont.appendChild(element);
+    //     }
+    // }
+
+    // function addclass() {
+    //     var div = document.getElementById("div");
+    //     var cname = div.getAttribute("class");
+    //     console.log(cname);
+    //     cname+=" class3"
+    //     console.log(cname);
+    //     div.setAttribute("class",cname);
+    // }
+
+    // function setStyle() {
+    //     var firstDiv = document.querySelector("div");
+    //     firstDiv.setAttribute("class","class1")
+    //     var firstp = document.querySelector("p");
+    //     firstp.setAttribute("id","id1");
+    // }
+
+    // function removeStyle() {
+    //     var firstDiv = document.querySelector("div");
+    //     firstDiv.removeAttribute("class");
+    //     var firstp = document.querySelector("p");
+    //     firstp.removeAttribute("id");
+    // }
+
+
+    function setdiv() {
+        var firstDiv = document.querySelector("div");
+        firstDiv.style.color = "blue";
+        firstDiv.style.backgroundColor="black";
+        firstDiv.style.padding = "10px"
+    }
+
+    function setpara() {
+        var firstDiv = document.querySelector("p");
+        firstDiv.style.color = "blue";
+        firstDiv.style.backgroundColor="yellow";
+        firstDiv.style.padding = "50px"
+        firstDiv.style.border= " 1px solid black"
+    }
+
+</script>

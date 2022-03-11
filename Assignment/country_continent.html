@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <select id = "continent_select">
+        <option value = "India"> India </option>
+        <option value = "America"> United State of America</option>
+        <option value = "China"> China </option>
+        <option value = "Nepal"> Nepal </option>
+        <option value = "Australia"> Australia </option>
+        <option value = "France"> France </option>
+        <option value = "Germany"> Germany </option>
+        <option value = "Africa"> South Africa </option>
+        <option value = "Nigeria"> Nigeria </option>
+        <option value = "Mexico"> Mexico </option>
+        <option value = "Argentina"> Argentina </option>
+        <option value = "Brazil"> Brazil </option>
+        <option value = "Canada"> Canada </option>
+        <option value = "Singapore"> signapore </option>
+        <option value = "Sweden"> Sweden </option>    
+    </select>
+    <br />
+    <br />
+    <button onclick="find()">Find Continent</button>
+
+</body>
+</html>
+
+<script>
+
+    function find() {
+        var ans = document.getElementById("continent_select").value;
+        if(ans == "India" || ans == "China" || ans=="Nepal" || ans == "Singapore"){
+            alert("Continent is Asia")
+        }else if(ans == "America" || ans == "Mexico" || ans == "Canada" || ans == "Brazil"){
+            alert("Continent is North America")
+        }else if(ans == "Australia"){
+           alert("Content is Australia") 
+        }else if(ans == "France" || ans == "Germany" || ans=="Sweden"){
+            alert("Continent is Europe")            
+        }else if(ans == "Africa"){
+            alert("Continent is Africa")
+        }else if(ans == "Nigeria"){
+            alert("Continent is West Africa")
+        }else if(ans == "Argentina"){
+            alert("Continet is South America");
+        }
+    }
+
+</script>

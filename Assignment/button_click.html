@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="h1">Change the buttons text color random value</h1>
+    <button id="colorChange" onclick="changeColor()">Click here to change my color</button>
+    
+    <script>
+
+        var text = document.getElementById("h1");
+        var button = document.getElementById("colorChange")
+
+        function random(number) {
+            return Math.floor(Math.random()*number);
+        }
+
+        function switchcolor(){
+            var randomcolor = 'rgb('+random(255)+','+random(255)+','+random(255)+')';
+            text.style.color=randomcolor;
+        }
+        
+        button.addEventListener('click',switchcolor);
+
+
+        // function changeColor() {
+        //     var array = ["red","yellow","green","orange","pink","black","purple","blue"];
+
+        //     for(var i=0; i<array.length; i++){
+        //         text.style.color = array[i];
+        //     }
+        // }
+
+        // var array = ["red","yellow","green","orange","pink","black","purple","blue"];
+
+        // function random(array) {
+        //     for(var i=0; i<array.length; i++){
+        //         var res = Math.floor(i/array.length);
+        //     }
+        //     return res;
+        // }
+
+        // function switchcolor() {
+        //     var randomcolor = array[random(array)];
+        //     text.style.color = randomcolor
+        // }
+
+    </script>
+
+</body>
+</html>

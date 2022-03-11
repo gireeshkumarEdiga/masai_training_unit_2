@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <center>
+            <select id="gender">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+            <input type="number" placeholder="enter a number" id="year" />
+
+            <button onclick="find()">Check</button>
+        </center>
+    </div>
+</body>
+</html>
+
+<script>
+
+    function find() {
+        var gender = document.getElementById("gender").value;
+        var year = document.getElementById("year").value
+        year = Number(year);
+        if(gender == "M" && year <2001){
+            alert("Your eligible to marry!");
+        }else if(gender == "F" && year <2004){
+            alert("Your eligible to marry!");
+        }else{
+            alert("Your not eligible to marry!")
+        }
+    }
+
+</script>

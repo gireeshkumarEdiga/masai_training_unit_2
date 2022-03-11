@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #count {
+            display: flex;
+            flex-direction: column;
+        }
+        #nav {
+            background-color: orangered;
+            width: 96%;
+            height: 100px;
+            margin: 2%;
+        }
+        #left {
+            background-color: greenyellow;
+            width: 30%;
+            height: 600px;
+            margin: 2%;
+        }
+        #right {
+            background-color: darkslategray;
+            width: 62%;
+            height: 600px;
+            margin: 2%;
+        }
+        #count > div {
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* #nav {
+            grid-area: a;
+        }
+
+        #left {
+            grid-area: b;
+        }
+        #right {
+            grid-area: c;
+        }  */
+
+    </style>
+</head>
+<body>
+    <div id="count">
+        <div>
+            <div id="nav"></div>
+        </div>
+        <div>
+            <div id="left"></div>
+            <div id="right"></div>
+        </div>
+    </div>
+</body>
+</html>

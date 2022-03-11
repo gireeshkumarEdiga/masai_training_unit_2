@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #max-min {
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid red; */
+            margin: 2% 30%;
+        }
+        #min {
+            /* border: 1px solid black; */
+            margin: 0% 40% 0% 0%;
+        }
+        #max {
+            /* border: 1px solid black; */
+            margin: 0% 0% 0% 40%;
+        }
+        #display1 {
+            background-color: orangered;
+        }
+        #display2 {
+            background-color: green;
+        }
+        #keyboard {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 50px 50px 50px 50px;
+        }
+        #main {
+            width: 500px;
+        }
+        #enter {
+            width: 150px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="max-min">
+            <div id="min">
+                <div id="display1"></div>
+                <h2>MIN</h2>
+            </div>
+            <div id="max">
+                <div id="display2"></div>
+                <h2>MAX</h2>
+            </div>
+        </div>
+        <div id="main">
+            <h2>SCORE</h2>
+            <input type="text" id="input" />
+            <br />
+            <br />
+            <div id="keyboard">
+                <button onclick="press(1)">1</button>
+                <button onclick="press(2)">2</button>
+                <button onclick="press(3)">3</button>
+                <button onclick="press(4)">4</button>
+                <button onclick="press(5)">5</button>
+                <button onclick="press(6)">6</button>
+                <button onclick="press(7)">7</button>
+                <button onclick="press(8)">8</button>
+                <button onclick="press(9)">9</button>
+                <br />
+                <button onclick="press(0)">0</button>
+            </div>
+            <br />
+            <button onclick="enter()" id="enter">Enter</button>
+        </div>
+    </center>
+</body>
+</html>
+
+<script>
+
+    function press(num){
+        var output = ""
+        //output = document.getElementById('input');
+        output += num;
+        output = Number(output);
+        document.getElementById("input").value += output;
+    }
+
+    function enter() {
+        var num = document.getElementById("input").value;
+        var min1 = document.getElementById("display1").textContent;
+        var max1 = document.getElementById("display2").textContent;
+        if(num===""){
+            return
+        }
+        if(max1=="" || Number(num)>Number(max1)){
+            document.getElementById("display2").textContent = num;
+        }else if(min1=="" || Number(num)<Number(min1)){
+            document.getElementById("display1").textContent = num;
+        }
+        document.getElementById("input").value = "";
+    }
+
+</script>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* .flex-box {
+            display: flex;
+            border: 1px dashed red;
+            margin: 10px;
+        }
+
+        .flex-box div {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        #box1 div:nth-of-type(2){
+            flex-grow: 1;
+        }
+
+        #box2 div {
+            flex-grow: 1;
+        }
+
+        #box2 div:nth-of-type(2){
+            flex-grow: 3;
+        }
+
+        #box3 div {
+            flex-grow: 1;
+        }
+
+        #box3 div:nth-of-type(2n){
+            flex-grow: 2;
+        } */
+
+         /* .flex-box {
+             display: flex;
+            border: 1px dashed red;
+            margin: 10px;
+            width: 800px;
+        }
+        .flex-box div {
+              margin: 10px;
+              padding: 10px;
+              border: 1px solid black;
+        }
+            #box1 div {
+                flex-basis: 300px;
+            }
+            #box1 div:nth-of-type(2n){
+                flex-shrink: 2;
+            } */
+
+/* #count {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background: black;
+    padding: 20px;
+    grid-template: "a a a"
+                   "b e e"
+                   "b c c"
+                   "b d d";
+}
+
+#count div {
+    background-color: yellow;
+    font-size: 30px;
+    text-align: center;
+}
+
+#item1 {
+    grid-area: a;
+}
+
+#item2 {
+    grid-area: b;
+}
+#item3 {
+    grid-area: c;
+}
+#item4 {
+    grid-area: d;
+}
+#item5 {
+    grid-area: e;
+} */
+      #cont {
+          display: grid;
+          grid-gap: 10px;
+          grid-template-columns: auto auto auto auto;
+          grid-template-rows: 50px 50px 50px 50px 50px 50px;
+          background: black;
+          padding: 20px;
+      }
+       #cont div {
+           background : yellow;
+           font-size: 30px;
+           text-align: center;
+       }
+
+       #item2 {
+           grid-area: 1 / 1 /2/ 3;
+       }
+
+       #item4 {
+           grid-area: 2 / 1 / 4/ 5 ;
+       }
+
+       #item5 {
+           background: red !important;
+           grid-row-start: 3;
+           grid-column: 2;
+           grid-row-end: 5;
+           grid-column-end: 4;
+       }
+    </style>
+</head>
+<body>
+
+    
+    <!-- <div class="flex-box" id="box1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </div>
+      <div class="flex-box" id="box2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </div>
+      <div class="flex-box" id="box3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </div> -->
+
+      <!-- <div class="flex-box" id="box1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </div> -->
+
+      <!-- <div id="cont">
+        <div id="item1">1</div>
+        <div id="item2">2</div>
+        <div id="item3">3</div>
+        <div id="item4">4</div>
+        <div id="item5">5</div>
+      </div> -->
+
+      <div id="cont">
+        <div id="item1">1</div>
+        <div id="item2">2</div>
+        <div id="item3">3</div>
+        <div id="item4">4</div>
+        <div id="item5">5</div>
+        <div id="item6">6</div>
+        <div id="item7">7</div>
+        <div id="item8">8</div>
+        <div id="item9">9</div>
+        <div id="item10">10</div>
+        <div id="item11">11</div>
+        <div id="item12">12</div>
+        <div id="item13">13</div>
+        <div id="item14">14</div>
+        <div id="item15">15</div>
+        <div id="item16">16</div>
+      </div>
+
+</body>
+</html>
